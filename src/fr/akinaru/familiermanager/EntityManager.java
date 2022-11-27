@@ -28,7 +28,6 @@ public enum EntityManager {
         this.speed = speed;
     }
 
-
     public String getName() {
 
         return name;
