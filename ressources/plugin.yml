@@ -1,0 +1,8 @@
+name: Familier
+version: 1.0
+author: Akinaru
+main: fr.akinaru.familier.Familier
+commands:
+  familier:
+    description: Ouvre le menu de familier
+

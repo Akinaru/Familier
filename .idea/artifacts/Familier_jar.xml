@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Familier:jar">
+    <output-path>$PROJECT_DIR$/../../mc/Plugins</output-path>
+    <root id="archive" name="Familier.jar">
+      <element id="module-output" name="Familier" />
+    </root>
+  </artifact>
+</component>
