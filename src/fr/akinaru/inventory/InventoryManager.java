@@ -35,6 +35,9 @@ public class InventoryManager implements Listener {
         inv.setItem(EntityManager.WITHER.getGuiPlace(),createGuiItem(EntityManager.WITHER.getGuiMaterial(),EntityManager.WITHER.getGuiName(),"§7Un Wither méchant !"));
         inv.setItem(EntityManager.SHEEP.getGuiPlace(),createGuiItem(EntityManager.SHEEP.getGuiMaterial(),EntityManager.SHEEP.getGuiName(),"§7Un mouton tout doux !"));
         inv.setItem(EntityManager.SQUID.getGuiPlace(),createGuiItem(EntityManager.SQUID.getGuiMaterial(),EntityManager.SQUID.getGuiName(),"§7Un poulpe visqueux !"));
+        inv.setItem(EntityManager.WOLF.getGuiPlace(),createGuiItem(EntityManager.WOLF.getGuiMaterial(),EntityManager.WOLF.getGuiName(),"§7Un loup sauvage !"));
+        inv.setItem(EntityManager.SPIDER.getGuiPlace(),createGuiItem(EntityManager.SPIDER.getGuiMaterial(),EntityManager.SPIDER.getGuiName(),"§7Une araignée de roblox !"));
+        inv.setItem(EntityManager.ZOMBIE.getGuiPlace(),createGuiItem(EntityManager.ZOMBIE.getGuiMaterial(),EntityManager.ZOMBIE.getGuiName(),"§7Un zombie fou furieux !"));
         inv.setItem(53, createGuiItem(Material.BARRIER, "§cSupprimer le familier", "§7Clique pour supprimer ton familier.", "§8usage: /familier remove"));
         setGlass(inv);
     }

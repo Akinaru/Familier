@@ -10,6 +10,9 @@ public enum EntityManager {
     WITHER("Wither", EntityType.WITHER, Material.SOUL_SAND, 13, "§7Wither", (double)0.6),
     SHEEP("Mouton", EntityType.SHEEP, Material.WOOL, 14, "§2Mouton", 2.2),
     SQUID("Poulpe", EntityType.SQUID, Material.INK_SACK, 15, "§bPoulpe", (double)2),
+    WOLF("Loup", EntityType.WOLF, Material.BONE, 16, "§7Loup", (double)2),
+    SPIDER("Arraignée", EntityType.SPIDER, Material.SPIDER_EYE, 19, "§9Araignée", (double)1.6),
+    ZOMBIE("Zombie", EntityType.ZOMBIE, Material.ROTTEN_FLESH, 20, "§cZombie", (double)2),
     COW("Vache", EntityType.COW, Material.COOKED_BEEF, 11, "§6Vache", 2.2);
 
     private final String name;

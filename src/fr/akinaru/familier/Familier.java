@@ -6,6 +6,8 @@ import fr.akinaru.familierstockage.ChickenManager;
 import fr.akinaru.familiermanager.DeleteFamilier;
 import fr.akinaru.inventory.InventoryClick;
 import fr.akinaru.inventory.InventoryManager;
+import fr.akinaru.player.ClickEvent;
+import fr.akinaru.player.PlayerQuit;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
@@ -29,6 +31,9 @@ public final class Familier extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new InventoryClick(), this);
         Bukkit.getPluginManager().registerEvents(new DamageEntity(), this);
         Bukkit.getPluginManager().registerEvents(new FamilierTarget(), this);
+
+        Bukkit.getPluginManager().registerEvents(new PlayerQuit(), this);
+        Bukkit.getPluginManager().registerEvents(new ClickEvent(), this);
         this.getCommand("familier").setExecutor(new fr.akinaru.familier.CommandManager());
         instance = this;
     }

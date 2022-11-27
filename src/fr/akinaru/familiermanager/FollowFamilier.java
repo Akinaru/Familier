@@ -15,7 +15,11 @@ public class FollowFamilier implements Listener {
         new BukkitRunnable(){
             @Override
             public void run() {
-                if(!(Familier.FamilierList.get(p).equals(familier)) || !(p.isOnline())){
+                if(!(Familier.FamilierList.containsKey(p)) || !(p.isOnline() || !(familier.getPassenger().isEmpty())) ){
+                    this.cancel();
+                    return;
+                }
+                if(!(familier.getPassenger() == null)){
                     return;
                 }
                 if(p.getLocation().distance(familier.getLocation()) > 15){

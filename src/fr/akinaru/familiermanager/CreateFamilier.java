@@ -1,10 +1,7 @@
 package fr.akinaru.familiermanager;
 
 import fr.akinaru.familier.Familier;
-import fr.akinaru.familierstockage.BlazeManager;
-import fr.akinaru.familierstockage.ChickenManager;
-import fr.akinaru.familierstockage.CowManager;
-import fr.akinaru.familierstockage.WitherManager;
+import fr.akinaru.familierstockage.*;
 import fr.akinaru.listener.Particles;
 import net.minecraft.server.v1_8_R3.EnumParticle;
 import org.bukkit.Location;
@@ -20,7 +17,10 @@ public class CreateFamilier {
         if(entityType == EntityManager.BLAZE.getEntityType()) BlazeManager.CreateFamilier(p);
         if(entityType == EntityManager.SHEEP.getEntityType()) SheepManager.CreateFamilier(p);
         if(entityType == EntityManager.SQUID.getEntityType()) SquidManager.CreateFamilier(p);
-        //if(entityType == EntityManager.WITHER.getEntityType()) WitherManager.CreateFamilier(p);
+        if(entityType == EntityManager.WOLF.getEntityType()) WolfManager.CreateFamilier(p);
+        if(entityType == EntityManager.SPIDER.getEntityType()) SpiderManager.CreateFamilier(p);
+        if(entityType == EntityManager.ZOMBIE.getEntityType()) ZombieManager.CreateFamilier(p);
+        if(entityType == EntityManager.WITHER.getEntityType()) WitherManager.CreateFamilier(p);
     }
 
     public static void CreationFinal(Player p, Entity familier, double speed){
